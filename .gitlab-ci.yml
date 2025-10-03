@@ -1,0 +1,15 @@
+stages:
+  - build
+  - test
+
+build_job:
+  stage: build
+  script:
+    - echo "Building the demo repo"
+    - ls -la
+
+test_job:
+  stage: test
+  script:
+    - echo "Running tests for demo repo"
+    - cat README.md
